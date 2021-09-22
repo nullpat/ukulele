@@ -13,13 +13,14 @@ version = "0.1"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
+    mavenLocal()
     mavenCentral()
     maven { url = uri("https://m2.dv8tion.net/releases") }
 }
 
 dependencies {
     implementation("net.dv8tion:JDA:4.3.0_277")
-    implementation("com.sedmelluq:lavaplayer:1.3.78")
+    implementation("com.sedmelluq:lavaplayer:1.3.79")
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
 
     runtimeOnly("com.h2database:h2")
